@@ -1,0 +1,22 @@
+{
+
+    "name": "site Ad Blocker", 
+    "description": "Blocks ads on any website, made by - Pushker Naresh",
+    "version": "1.0.1", 
+    "manifest_version":3,
+    "icons": {
+        "128"   : "download.png"
+    },
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "declarative_net_request":{
+        "rule_resources":[
+            {   
+                "id":"ruleset_1",
+                "enabled":true,
+                "path":"rules.json"
+            }
+        ]
+    }
+}
